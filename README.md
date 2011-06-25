@@ -27,10 +27,10 @@ Note that you need a jailbroken iPhone in order to use this tweak.
 Install
 -------
 
-Just clone this the repository into a folder on your local machine.
+Just clone this the repository into a folder on your local machine.<br />
 After that you can compile it via [theos]: https://github.com/DHowett/theos.
 
-An easier way is to load the .deb package from https://github.com/mgebele/WeeFacebookDeb
+An easier way is to load the .deb package from https://github.com/mgebele/WeeFacebookDeb<br />
 and install it via dpkg.
 
 
