@@ -231,7 +231,7 @@ wasInitialized:
         [self view].frame = rect;
         // Also resize all subviews.
         [self resizeSubviewsForInterfaceOrientation:arg1];
-	}
+    }
     else
     {
         CGRect rect = [self view].frame;
@@ -239,7 +239,7 @@ wasInitialized:
         [self view].frame = rect;
         // Also resize all subviews.
         [self resizeSubviewsForInterfaceOrientation:arg1];
-	}
+    }
 }
 
 
