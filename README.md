@@ -30,7 +30,7 @@ Install
 Just clone this the repository into a folder on your local machine.<br />
 After that you can compile it via [theos]: https://github.com/DHowett/theos.
 
-An easier way is to load the .deb package from https://github.com/mgebele/WeeFacebookDeb<br />
+An easier way is to load the .deb package from https://github.com/mgebele/WeeFacebookDeb <br />
 and install it via dpkg.
 
 
