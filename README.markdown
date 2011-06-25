@@ -1,5 +1,5 @@
 An improved version of WeeFacebook.
 
-Credits:
+# Credits:
 
 Anton Pauli
