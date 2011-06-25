@@ -496,7 +496,6 @@ wasInitialized:
 #pragma mark Target-Action
 // -----------------------------------------------------------------------------
 
-
 - (void)visibilityAction
 {
     [self logMethodCallForSelector:_cmd];
