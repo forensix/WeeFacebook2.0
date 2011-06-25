@@ -122,7 +122,7 @@ static FacebookWeeApp *sharedInstance = nil;
     
     if (!_dylibHandler)
     {
-		NSLog(@"%@:%@ - Error hooking Helper: %s",
+        NSLog(@"%@:%@ - Error hooking Helper: %s",
               dlerror(),
               NSStringFromClass([self class]),
               NSStringFromSelector(_cmd));
@@ -200,7 +200,7 @@ wasInitialized:
     [self logMethodCallForSelector:_cmd];
 	
     // Dirty hack to fix the "TouchHandler" bug.
-	UIButton *button
+    UIButton *button
     = (UIButton *)
     [[self view].window
      hitTest:
@@ -211,12 +211,12 @@ wasInitialized:
     
     SEL selector = @selector(sendActionsForControlEvents:);
     BOOL canHandleSelector = [button respondsToSelector:selector];
-	if(canHandleSelector)
+    if(canHandleSelector)
     {
-		[button sendActionsForControlEvents:
+        [button sendActionsForControlEvents:
          UIControlEventTouchUpInside];
-	}
-	return nil;
+    }
+    return nil;
 }
 
 
@@ -441,7 +441,6 @@ wasInitialized:
      setImage:image
      forState:UIControlStateNormal];
     
-    
     [_homeButton
      addTarget:self
      action:@selector(homeAction)
@@ -566,7 +565,6 @@ wasInitialized:
     |
     UIViewAutoresizingFlexibleWidth
     ;
-    
 }
 
 
