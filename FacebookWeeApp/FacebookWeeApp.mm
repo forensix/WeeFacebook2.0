@@ -226,18 +226,17 @@ wasInitialized:
 	
     if (UIInterfaceOrientationIsLandscape(arg1))
     {
-		CGRect rect = [self view].frame;
-		rect.size.width = LANDSCAPE_WIDTH;
-		[self view].frame = rect;
-        
+        CGRect rect = [self view].frame;
+        rect.size.width = LANDSCAPE_WIDTH;
+        [self view].frame = rect;
         // Also resize all subviews.
         [self resizeSubviewsForInterfaceOrientation:arg1];
-	} else
+	}
+    else
     {
-		CGRect rect = [self view].frame;
-		rect.size.width = PORTRAIT_WIDTH;
-		[self view].frame = rect;
-        
+        CGRect rect = [self view].frame;
+        rect.size.width = PORTRAIT_WIDTH;
+        [self view].frame = rect;
         // Also resize all subviews.
         [self resizeSubviewsForInterfaceOrientation:arg1];
 	}
@@ -263,7 +262,7 @@ wasInitialized:
             CGRect rect = subview.frame;
             rect.size.width = LANDSCAPE_WIDTH;
             subview.frame = rect;
-		}
+        }
     }
     else
     {
@@ -272,7 +271,7 @@ wasInitialized:
             CGRect rect = subview.frame;
             rect.size.width = PORTRAIT_WIDTH;
             subview.frame = rect;
-		}
+        }
     }
     
     [self updateHomeButtonPositionForInterfaceOrientation:
