@@ -1,0 +1,9 @@
+Package: com.manuelgebele.facebookweeapphooker
+Name: FacebookWeeAppHooker
+Depends: mobilesubstrate
+Version: 2.0.1
+Architecture: iphoneos-arm
+Description: FacebookWeeApp helper tweak!
+Maintainer: Manuel Gebele
+Author: Manuel Gebele
+Section: Tweaks

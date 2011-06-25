@@ -1,0 +1,9 @@
+Package: com.manuelgebele.facebookweeapp
+Name: FacebookWeeApp
+Version: 2.0.1
+Architecture: iphoneos-arm
+Description: Mobile Facebook in the iOS 5 Notification Center
+Maintainer: Manuel Gebele
+Author: Manuel Gebele
+Section: Tweaks
+Tag: role::hacker
