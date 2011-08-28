@@ -43,6 +43,7 @@
 -(id)_weeAppForSectionID:(id)sectionID bundlePath:(id)path;
 -(void)_updateSectionForSectionInfo:(id)sectionInfo withCompletion:(id)completion;
 -(void)_loadSections;
+- (void)_reloadTableView;
 -(id)_sectionAtIndex:(unsigned)index;
 -(id)_bulletinAtIndexPath:(id)indexPath;
 -(id)_indexPathForBulletin:(id)bulletin;

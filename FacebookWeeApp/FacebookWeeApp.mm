@@ -15,6 +15,8 @@
 #import <UIKit/UIKit.h>
 #import <UIKit/UIView.h>
 
+#include <objc/runtime.h>
+
 #import "dlfcn.h"
 
 #define FACEBOOK_URL \
@@ -38,7 +40,7 @@
 #define LANDSCAPE_WIDTH 476.0f
 #define PORTRAIT_WIDTH  316.0f
 
-#define WEEAPP_SECTION_ID @"com.manuelgebele.facebookweeApp"
+#define WEEAPP_SECTION_ID @"com.manuelgebele.facebookweeapp"
 
 #define HOME_BUTTON_TAG       1 >> 8
 
@@ -56,6 +58,7 @@
 -(id)_weeAppForSectionID:(id)sectionID;
 -(void)_removeWeeAppForSectionID:(id)sectionID;
 -(void)_loadSections;
+- (void)_reloadTableView;
 
 @end
 
@@ -488,7 +491,8 @@ wasInitialized:
     = [bulletinListController _weeAppForSectionID:WEEAPP_SECTION_ID];
     
     [bulletinListController _removeWeeAppForSectionID:[weeApp sectionID]];
-    [bulletinListController _loadSections];
+    /* [bulletinListController _loadSections]; */
+    [bulletinListController _reloadTableView];
 }
 
 
@@ -500,8 +504,6 @@ wasInitialized:
 {
     [self logMethodCallForSelector:_cmd];
     
-    [self triggerContentReload];
-    
     if (_visibilityContext == VisibilityContextShrink)
     {
         _visibilityContext = VisibilityContextExpand;
@@ -511,6 +513,8 @@ wasInitialized:
         _visibilityContext = VisibilityContextShrink;
     }
     
+    [self triggerContentReload];
+
     [self exchangeVisibilityButtonImages];
 }
 
